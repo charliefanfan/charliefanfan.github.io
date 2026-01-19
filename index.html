@@ -1,19 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>App Support Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Support Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .app-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .app-card:hover {
+            transform: translateY(-4px);
+            border-color: #93c5fd;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
 </head>
-<body>
-    <h1>Welcome to the App Support Site</h1>
-    <p>This page serves as the support site for Cat Chase: Fun Action Escape.</p>
-    
-    <p>Ad Verification: <a href="app-ads.txt">app-ads.txt</a></p>
+<body class="bg-slate-50 text-slate-900 font-sans">
 
-    <h2>Privacy Policies:</h2>
-    <ul>
-        <li><a href="privacy.html">Cat Chase: Fun Action Privacy Policy</a></li>
-        <li><a href="privacy2.html">Cat Goal Saver Privacy Policy</a></li>
-    </ul>
+    <!-- Header Section -->
+    <header class="bg-white border-b border-slate-200 pt-16 pb-20 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
+                App Support Center
+            </h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto mb-8">
+                歡迎來到支援中心。您可以在此查看我們旗下 iOS 應用程式的狀態與隱私權政策。
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="app-ads.txt" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-sm font-bold shadow-lg shadow-blue-200 transition-all">
+                    <i class="fa-solid fa-rectangle-ad"></i>
+                    Ad Verification (app-ads.txt)
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- App Grid -->
+    <main class="max-w-6xl mx-auto px-6 -mt-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Capsule -->
+            <div class="app-card bg-white rounded-2xl shadow-sm border border-slate-200 p-6">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="bg-amber-50 text-amber-600 p-3 rounded-xl">
+                        <i class="fa-solid fa-clock-rotate-left text-2xl"></i>
+                    </div>
+                    <span class="text-xs font-semibold px-2.5 py-1 rounded-full border bg-amber-100 text-amber-700 border-amber-200">
+                        iOS 1.0.1
+                    </span>
+                </div>
+                <h3 class="text-xl font-bold text-slate-800 mb-2">Capsule: Routine Tracker</h3>
+                <p class="text-slate-500 text-sm mb-4 min-h-[40px]">建立並追蹤您的每日習慣，讓生活更規律。</p>
+                <div class="text-xs text-slate-400 mb-4">狀態: <span class="font-medium text-slate-600">審查中 (In Review)</span></div>
+                <a href="privacy-capsule.html" class="flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-700 py-3 rounded-lg text-sm font-semibold transition-colors">
+                    <i class="fa-solid fa-user-shield text-xs"></i> 隱私權政策
+                </a>
+            </div>
+
+            <!-- Focus Cat -->
+            <div class="app-card bg-white rounded-2xl shadow-sm border border-slate-200 p-6">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="bg-blue-50 text-blue-600 p-3 rounded-xl">
+                        <i class="fa-solid fa-cat text-2xl"></i>
+                    </div>
+                    <span class="text-xs font-semibold px-2.5 py-1 rounded-full border bg-blue-100 text-blue-700 border-blue-200">
+                        iOS 1.0
+                    </span>
+                </div>
+                <h3 class="text-xl font-bold text-slate-800 mb-2">Focus Cat: Task Timer & Goal</h3>
+                <p class="text-slate-500 text-sm mb-4 min-h-[40px]">伴隨可愛貓咪的番茄鐘工具，提升您的專注力。</p>
+                <div class="text-xs text-slate-400 mb-4">狀態: <span class="font-medium text-slate-600">等待審查 (Waiting for Review)</span></div>
+                <a href="privacy-focuscat.html" class="flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-700 py-3 rounded-lg text-sm font-semibold transition-colors">
+                    <i class="fa-solid fa-user-shield text-xs"></i> 隱私權政策
+                </a>
+            </div>
+
+            <!-- GiftMatch -->
+            <div class="app-card bg-white rounded-2xl shadow-sm border border-slate-200 p-6">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="bg-emerald-50 text-emerald-600 p-3 rounded-xl">
+                        <i class="fa-solid fa-gift text-2xl"></i>
+                    </div>
+                    <span class="text-xs font-semibold px-2.5 py-1 rounded-full border bg-emerald-100 text-emerald-700 border-emerald-200">
+                        iOS 1.0.2
+                    </span>
+                </div>
+                <h3 class="text-xl font-bold text-slate-800 mb-2">GiftMatch: Gift Planner</h3>
+                <p class="text-slate-500 text-sm mb-4 min-h-[40px]">整理您的送禮點子，不錯過任何重要時刻。</p>
+                <div class="text-xs text-slate-400 mb-4">狀態: <span class="font-medium text-slate-600">已可發佈 (Available)</span></div>
+                <a href="privacy-giftmatch.html" class="flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-700 py-3 rounded-lg text-sm font-semibold transition-colors">
+                    <i class="fa-solid fa-user-shield text-xs"></i> 隱私權政策
+                </a>
+            </div>
+
+            <!-- Cat Chase -->
+            <div class="app-card bg-white rounded-2xl shadow-sm border border-slate-200 p-6">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="bg-emerald-50 text-emerald-600 p-3 rounded-xl">
+                        <i class="fa-solid fa-paw text-2xl"></i>
+                    </div>
+                    <span class="text-xs font-semibold px-2.5 py-1 rounded-full border bg-emerald-100 text-emerald-700 border-emerald-200">
+                        iOS 1.0.2
+                    </span>
+                </div>
+                <h3 class="text-xl font-bold text-slate-800 mb-2">Cat Chase: Fun Action Escape</h3>
+                <p class="text-slate-500 text-sm mb-4 min-h-[40px]">充滿動作感的貓咪逃脫遊戲，考驗您的反應力。</p>
+                <div class="text-xs text-slate-400 mb-4">狀態: <span class="font-medium text-slate-600">已可發佈 (Available)</span></div>
+                <a href="privacy.html" class="flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-700 py-3 rounded-lg text-sm font-semibold transition-colors">
+                    <i class="fa-solid fa-user-shield text-xs"></i> 隱私權政策
+                </a>
+            </div>
+
+            <!-- CatGoalSaver -->
+            <div class="app-card bg-white rounded-2xl shadow-sm border border-slate-200 p-6">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="bg-emerald-50 text-emerald-600 p-3 rounded-xl">
+                        <i class="fa-solid fa-shield-cat text-2xl"></i>
+                    </div>
+                    <span class="text-xs font-semibold px-2.5 py-1 rounded-full border bg-emerald-100 text-emerald-700 border-emerald-200">
+                        iOS 1.0.2
+                    </span>
+                </div>
+                <h3 class="text-xl font-bold text-slate-800 mb-2">CatGoalSaver</h3>
+                <p class="text-slate-500 text-sm mb-4 min-h-[40px]">簡單好用的目標管理與儲蓄計畫工具。</p>
+                <div class="text-xs text-slate-400 mb-4">狀態: <span class="font-medium text-slate-600">已可發佈 (Available)</span></div>
+                <a href="privacy2.html" class="flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-700 py-3 rounded-lg text-sm font-semibold transition-colors">
+                    <i class="fa-solid fa-user-shield text-xs"></i> 隱私權政策
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-20 py-12 border-t border-slate-200 bg-white text-center text-slate-400 text-sm">
+        <p>© <script>document.write(new Date().getFullYear())</script> App Support Portal. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
