@@ -8,13 +8,7 @@
     <h1>Welcome to the App Support Site</h1>
     <p>Official Technical Documentation for Cat Chase Physics Engine.</p>
 
-    <p>Ad Verification: <a href="app-ads.txt">app-ads.txt</a></p>
-
-    <h2>Privacy Policies:</h2>
-    <ul>
-        <li><a href="privacy.html">Cat Chase: Fun Action Privacy Policy</a></li>
-        <li><a href="privacy2.html">Cat Goal Saver Privacy Policy</a></li>
-    </ul>
+   
 </body>
 </html>
 
