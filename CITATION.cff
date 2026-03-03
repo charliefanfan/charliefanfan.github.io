@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software or reference the algorithms, please cite it as below."
+authors:
+  - family-names: "Fan"
+    given-names: "Ching-Hao"
+    alias: "charliefanfan"
+title: "Technical Implementation of Dynamic Gravity Equilibrium (DGE) and ACF Protocol"
+version: 1.0.2
+date-released: 2026-03-03
+url: "https://charliefanfan.github.io/game1.html"
+abstract: >-
+  This repository contains the official technical documentation and algorithmic 
+  frameworks for the DGE (Dynamic Gravity Equilibrium) used in Cat Chase 
+  and the ACF (Adaptive Cognitive Friction) protocol.
