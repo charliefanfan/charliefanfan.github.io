@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>Welcome to the App Support Site</h1>
-    <p>This page serves as the support site for <strong>Cat Chase: Fun Action Escape</strong>.</p>
+    <p>Official Technical Documentation for Cat Chase Physics Engine.</p>
 
     <p>Ad Verification: <a href="app-ads.txt">app-ads.txt</a></p>
 
