@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Gapper</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --brand:   #2F6BFF;
+    --brand-light: #EAF1FF;
+    --bg:      #F5F4F0;
+    --surface: #FFFFFF;
+    --text:    #1C1C1E;
+    --muted:   #6E6E73;
+    --divider: #E5E5EA;
+    --success: #34C759;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Header ── */
+  header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--divider);
+    padding: 0 24px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.92);
+  }
+
+  .header-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-mark {
+    width: 32px; height: 32px;
+    background: var(--brand);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  .logo-mark svg { width: 18px; height: 18px; fill: white; }
+
+  .logo-name {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: -0.3px;
+  }
+
+  .logo-dot {
+    font-size: 12px;
+    color: var(--muted);
+    margin-left: auto;
+    font-weight: 400;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px 48px;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--brand-light);
+    color: var(--brand);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  .hero-badge::before {
+    content: '';
+    width: 6px; height: 6px;
+    background: var(--brand);
+    border-radius: 50%;
+  }
+
+  h1 {
+    font-size: clamp(32px, 5vw, 44px);
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.15;
+    color: var(--text);
+    margin-bottom: 16px;
+  }
+
+  .hero-sub {
+    font-size: 16px;
+    color: var(--muted);
+    max-width: 520px;
+    font-weight: 400;
+  }
+
+  .hero-meta {
+    display: flex;
+    gap: 24px;
+    margin-top: 28px;
+    flex-wrap: wrap;
+  }
+
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 500;
+  }
+
+  .meta-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--success);
+    flex-shrink: 0;
+  }
+
+  /* ── TL;DR Card ── */
+  .tldr {
+    max-width: 720px;
+    margin: 0 auto 48px;
+    padding: 0 24px;
+  }
+
+  .tldr-card {
+    background: var(--brand-light);
+    border: 1px solid rgba(47,107,255,0.15);
+    border-radius: 18px;
+    padding: 24px 28px;
+  }
+
+  .tldr-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--brand);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 14px;
+  }
+
+  .tldr-list {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+  }
+
+  .tldr-list li {
+    font-size: 14px;
+    color: #1a3580;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    line-height: 1.5;
+  }
+
+  .tldr-list li::before {
+    content: '✓';
+    color: var(--brand);
+    font-weight: 700;
+    font-size: 13px;
+    margin-top: 1px;
+    flex-shrink: 0;
+  }
+
+  /* ── Content ── */
+  .content {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+    display: grid;
+    gap: 16px;
+  }
+
+  .section-card {
+    background: var(--surface);
+    border: 1px solid var(--divider);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    transition: box-shadow 0.2s;
+  }
+
+  .section-card:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 22px 26px 18px;
+    border-bottom: 1px solid var(--divider);
+  }
+
+  .section-icon {
+    width: 38px; height: 38px;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  h2 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.2px;
+  }
+
+  .section-body {
+    padding: 20px 26px 24px;
+  }
+
+  p {
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.75;
+    font-weight: 400;
+  }
+
+  p + p { margin-top: 12px; }
+
+  strong {
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  ul.policy-list {
+    list-style: none;
+    margin-top: 14px;
+    display: grid;
+    gap: 9px;
+  }
+
+  ul.policy-list li {
+    font-size: 15px;
+    color: var(--muted);
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    line-height: 1.6;
+  }
+
+  ul.policy-list li::before {
+    content: '—';
+    color: var(--divider);
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  /* ── Contact ── */
+  .contact-card {
+    background: var(--surface);
+    border: 1px solid var(--divider);
+    border-radius: 18px;
+    padding: 28px 26px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .contact-icon {
+    width: 48px; height: 48px;
+    background: var(--brand-light);
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+
+  .contact-text h2 {
+    font-size: 17px;
+    margin-bottom: 4px;
+  }
+
+  .contact-text p {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .contact-link {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--brand);
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 11px 22px;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: opacity 0.15s, transform 0.15s;
+    white-space: nowrap;
+  }
+
+  .contact-link:hover { opacity: 0.88; transform: translateY(-1px); }
+
+  /* ── Footer ── */
+  footer {
+    border-top: 1px solid var(--divider);
+    padding: 28px 24px;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 13px;
+    color: var(--divider);
+    margin: 0;
+  }
+
+  footer span { color: var(--muted); }
+
+  /* ── Animations ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero       { animation: fadeUp 0.5s ease both; }
+  .tldr       { animation: fadeUp 0.5s ease 0.08s both; }
+  .section-card:nth-child(1) { animation: fadeUp 0.5s ease 0.12s both; }
+  .section-card:nth-child(2) { animation: fadeUp 0.5s ease 0.16s both; }
+  .section-card:nth-child(3) { animation: fadeUp 0.5s ease 0.20s both; }
+  .section-card:nth-child(4) { animation: fadeUp 0.5s ease 0.24s both; }
+  .section-card:nth-child(5) { animation: fadeUp 0.5s ease 0.28s both; }
+  .contact-card               { animation: fadeUp 0.5s ease 0.32s both; }
+
+  @media (max-width: 480px) {
+    .contact-link { margin-left: 0; width: 100%; justify-content: center; }
+    .hero-meta { gap: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="header-inner">
+    <div class="logo-mark">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+    </div>
+    <span class="logo-name">Gapper</span>
+    <span class="logo-dot">Privacy Policy</span>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-badge">Legal</div>
+  <h1>Privacy Policy</h1>
+  <p class="hero-sub">We built Gapper to help you reclaim your time — not to collect your data. Here's exactly what we do and don't do.</p>
+  <div class="hero-meta">
+    <div class="meta-item"><div class="meta-dot"></div> No data sold, ever</div>
+    <div class="meta-item"><div class="meta-dot"></div> No account required</div>
+    <div class="meta-item"><div class="meta-dot"></div> Everything stays on your device</div>
+  </div>
+</section>
+
+<!-- TL;DR -->
+<div class="tldr">
+  <div class="tldr-card">
+    <div class="tldr-title">TL;DR — The short version</div>
+    <ul class="tldr-list">
+      <li>Gapper does not collect, store, or transmit any personal data to external servers.</li>
+      <li>Calendar data is read locally on your device and never leaves it.</li>
+      <li>We don't use any third-party analytics or advertising SDKs.</li>
+      <li>All your preferences and activity history are stored only on your device.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Sections -->
+<div class="content">
+
+  <div class="section-card">
+    <div class="section-header">
+      <div class="section-icon" style="background:#EAF1FF;">📅</div>
+      <h2>Calendar &amp; Event Data</h2>
+    </div>
+    <div class="section-body">
+      <p>Gapper requests access to your calendar through Apple's EventKit framework to detect free time gaps between your events. <strong>This data is processed entirely on your device</strong> and is never uploaded, transmitted, or shared with any server or third party.</p>
+      <p>We read event start times, end times, and titles solely to calculate availability windows. We do not read event notes, attendees, locations, or any other metadata.</p>
+    </div>
+  </div>
+
+  <div class="section-card">
+    <div class="section-header">
+      <div class="section-icon" style="background:#F0FDF4;">💾</div>
+      <h2>Data We Store</h2>
+    </div>
+    <div class="section-body">
+      <p>The following information is stored <strong>locally on your device only</strong> using iOS standard storage (UserDefaults / on-device persistence):</p>
+      <ul class="policy-list">
+        <li>Your activity preferences and custom activities</li>
+        <li>Work hours and energy schedule settings</li>
+        <li>Completed activity history (for Stats)</li>
+        <li>App preferences such as enabled categories</li>
+      </ul>
+      <p style="margin-top:14px;">None of this data is backed up to any Gapper server. If you use iCloud Backup, Apple's standard iCloud terms apply to device backups.</p>
+    </div>
+  </div>
+
+  <div class="section-card">
+    <div class="section-header">
+      <div class="section-icon" style="background:#FFF7ED;">🚫</div>
+      <h2>Data We Do NOT Collect</h2>
+    </div>
+    <div class="section-body">
+      <p>Gapper does not collect any of the following:</p>
+      <ul class="policy-list">
+        <li>Names, email addresses, or any personally identifiable information</li>
+        <li>Location data</li>
+        <li>Usage analytics or behavioral tracking</li>
+        <li>Crash reports sent to third parties</li>
+        <li>Advertising identifiers (IDFA)</li>
+        <li>Any data from third-party SDKs — we don't use any</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-card">
+    <div class="section-header">
+      <div class="section-icon" style="background:#F5F0FF;">🔔</div>
+      <h2>Notifications</h2>
+    </div>
+    <div class="section-body">
+      <p>If you grant notification permission, Gapper uses it to remind you about upcoming free gaps. <strong>Notification scheduling happens entirely on-device</strong> using iOS local notifications. No notification content is sent to or through any external server.</p>
+    </div>
+  </div>
+
+  <div class="section-card">
+    <div class="section-header">
+      <div class="section-icon" style="background:#FFF0F0;">👶</div>
+      <h2>Children's Privacy</h2>
+    </div>
+    <div class="section-body">
+      <p>Gapper is not directed at children under the age of 13. We do not knowingly collect any information from children. Since we collect no personal data from any user, this applies equally to all age groups.</p>
+    </div>
+  </div>
+
+  <div class="section-card">
+    <div class="section-header">
+      <div class="section-icon" style="background:#F5F4F0;">📋</div>
+      <h2>Changes to This Policy</h2>
+    </div>
+    <div class="section-body">
+      <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated effective date. We encourage you to review this page periodically. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+      <p><strong>Effective date:</strong> March 2026</p>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="contact-card">
+    <div class="contact-icon">✉️</div>
+    <div class="contact-text">
+      <h2>Questions or concerns?</h2>
+      <p>We're happy to help with any privacy-related questions.</p>
+    </div>
+    <a class="contact-link" href="mailto:charliefanfan84@gmail.com">
+      charliefanfan84@gmail.com
+    </a>
+  </div>
+
+</div>
+
+<footer>
+  <p><span>© 2026 Gapper · Time Squeezer</span> &nbsp;·&nbsp; All rights reserved</p>
+</footer>
+
+</body>
+</html>
