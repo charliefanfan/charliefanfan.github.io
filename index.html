@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -10,7 +10,18 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;backgrou
 header{background:#fff;border-bottom:1px solid #e2e8f0;padding:56px 24px 48px}
 .header-inner{max-width:960px;margin:0 auto;text-align:center}
 header h1{font-size:clamp(28px,5vw,44px);font-weight:800;letter-spacing:-0.5px;margin-bottom:12px}
-header p{font-size:17px;color:#64748b;max-width:560px;margin:0 auto}
+header .subtitle{font-size:17px;color:#64748b;max-width:560px;margin:0 auto 40px}
+.header-sections{max-width:960px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:24px;text-align:left}
+.header-box{background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;padding:24px}
+.header-box h2{font-size:15px;font-weight:700;color:#0f172a;margin-bottom:12px}
+.header-box p{font-size:14px;color:#64748b;line-height:1.6;margin-bottom:8px}
+.header-box p:last-child{margin-bottom:0}
+.header-box a{color:#2563eb;text-decoration:none}
+.header-box a:hover{text-decoration:underline}
+.faq-q{font-weight:600;color:#1e293b;font-size:14px;margin-bottom:4px}
+.faq-a{font-size:13px;color:#64748b;margin-bottom:12px}
+.faq-a:last-child{margin-bottom:0}
+@media(max-width:600px){.header-sections{grid-template-columns:1fr}}
 main{max-width:960px;margin:-24px auto 0;padding:0 24px 60px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
 .card{background:#fff;border-radius:16px;border:1px solid #e2e8f0;padding:22px;transition:transform .2s,box-shadow .2s,border-color .2s}
@@ -59,28 +70,28 @@ footer{text-align:center;padding:32px 24px;border-top:1px solid #e2e8f0;backgrou
 <header>
   <div class="header-inner">
     <h1>App Support Center</h1>
-    <p>Welcome. Find support information and privacy policies for all our iOS apps.</p>
-  </div>
-    <h2>Contact Support</h2>
-    <p>If you need help with any app, found a bug, or have feedback, please contact us:</p>
-    <p style="margin-top:10px;font-size:15px;">
-      📧 <a href="mailto:charliefanfan84@gmail.com">charliefanfan84@gmail.com</a>
-    </p>
-    <p style="font-size:13px;color:#94a3b8;margin-top:6px;">
-      We usually respond within 24–48 hours.
-    </p>
-  </div>
-  <h2>FAQ</h2>
+    <p class="subtitle">Welcome. Find support information and privacy policies for all our iOS apps.</p>
 
-    <p><strong>Q: How do I report a bug?</strong></p>
-    <p style="color:#64748b;margin-bottom:10px;">
-      Send us an email with details and screenshots if possible.
-    </p>
+    <div class="header-sections">
+      <div class="header-box">
+        <h2>📧 Contact Support</h2>
+        <p>If you need help with any app, found a bug, or have feedback, please contact us:</p>
+        <p style="margin-top:10px;font-size:15px;font-weight:600;">
+          <a href="mailto:charliefanfan84@gmail.com">charliefanfan84@gmail.com</a>
+        </p>
+        <p style="font-size:13px;color:#94a3b8;margin-top:6px;">
+          We usually respond within 24–48 hours.
+        </p>
+      </div>
 
-    <p><strong>Q: Do your apps collect user data?</strong></p>
-    <p style="color:#64748b;">
-      Some apps may use analytics or ads. Please refer to each app’s privacy policy.
-    </p>
+      <div class="header-box">
+        <h2>❓ FAQ</h2>
+        <p class="faq-q">Q: How do I report a bug?</p>
+        <p class="faq-a">Send us an email with details and screenshots if possible.</p>
+        <p class="faq-q">Q: Do your apps collect user data?</p>
+        <p class="faq-a">Some apps may use analytics or ads. Please refer to each app's privacy policy.</p>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -98,7 +109,7 @@ footer{text-align:center;padding:32px 24px;border-top:1px solid #e2e8f0;backgrou
     <div class="card">
       <div class="card-top"><div class="icon bg-blue">⚡</div><span class="badge badge-amber">iOS 1.0 · In Review</span></div>
       <h3>FitSpace: Home Workouts</h3>
-      <p>Wortouts at home.</p>
+      <p>Workouts at home.</p>
       <div class="btn-row"><a href="privacy17.html" class="btn btn-gray">🔒 Privacy Policy</a></div>
     </div>
 
@@ -234,4 +245,4 @@ footer{text-align:center;padding:32px 24px;border-top:1px solid #e2e8f0;backgrou
 </footer>
 
 </body>
-</html> -->
+</html>
