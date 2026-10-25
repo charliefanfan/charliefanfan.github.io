@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Worldprint Privacy Policy</title>
+<meta name="description" content="How the Worldprint iPhone app handles your information. Your stamps, trips and photos stay on your device.">
+<style>
+  :root {
+    --bg: #eef3f3;
+    --panel: #ffffff;
+    --ink: #12252e;
+    --muted: #4f656d;
+    --rule: #d6e1e1;
+    --accent: #2a847c;
+    --accent-soft: #e3f1ef;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Noto Serif TC", "Songti TC", Georgia, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b161b;
+      --panel: #12232b;
+      --ink: #e3eeee;
+      --muted: #9fb4b9;
+      --rule: #23383f;
+      --accent: #6fc9be;
+      --accent-soft: #163239;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+
+  header.top { display: flex; align-items: center; gap: 1.25rem; margin-bottom: 0.5rem; }
+  .stamp { width: 5.5rem; height: 5.5rem; flex: none; color: var(--accent); transform: rotate(-8deg); }
+  header.top h1 {
+    margin: 0;
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: clamp(1.9rem, 5.5vw, 2.6rem);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+  .updated { margin: 0.4rem 0 0; color: var(--muted); font-size: 0.95rem; }
+
+  .lang { display: flex; gap: 1.25rem; margin: 1.25rem 0 1.5rem; font-size: 0.95rem; }
+  a { color: var(--accent); text-underline-offset: 0.18em; }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .doc {
+    background: var(--panel);
+    border-radius: 14px;
+    padding: 2rem 1.75rem 2.25rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 0 var(--rule), 0 14px 30px -24px rgba(10, 30, 36, 0.45);
+  }
+  @media (max-width: 30rem) { .doc { padding: 1.5rem 1.15rem 1.75rem; } }
+
+  .glance {
+    background: var(--accent-soft);
+    border-left: 4px solid var(--accent);
+    border-radius: 0 10px 10px 0;
+    padding: 1.1rem 1.25rem 1.1rem 1.35rem;
+    margin: 0 0 1.5rem;
+  }
+  .glance h2 { margin: 0 0 0.5rem; border: 0; padding: 0; font-size: 1.1rem; }
+  .glance ul { margin: 0; padding-left: 1.1rem; }
+  .glance li { margin: 0.35rem 0; }
+
+  h2 {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    line-height: 1.3;
+    margin: 2.25rem 0 0.6rem;
+    padding-top: 1.6rem;
+    border-top: 1px solid var(--rule);
+  }
+  .doc > h2:first-of-type, .glance + h2 { margin-top: 0; }
+  p { margin: 0.6rem 0; }
+  ul.plain { padding-left: 1.2rem; margin: 0.6rem 0; }
+  ul.plain li { margin: 0.35rem 0; }
+  .muted { color: var(--muted); }
+  footer.site { color: var(--muted); font-size: 0.9rem; }
+
+  @media print {
+    body { background: #fff; color: #000; }
+    .lang, .stamp { display: none; }
+    .doc { box-shadow: none; padding: 0; }
+    a { color: inherit; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <svg class="stamp" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+      <defs>
+        <path id="arc-top" d="M 20 50 A 30 30 0 0 1 80 50"/>
+        <path id="arc-bottom" d="M 13 50 A 37 37 0 0 0 87 50"/>
+        <filter id="ink" x="-5%" y="-5%" width="110%" height="110%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="7" result="noise"/>
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.5"/>
+        </filter>
+      </defs>
+      <g fill="none" stroke="currentColor" filter="url(#ink)">
+        <circle cx="50" cy="50" r="46" stroke-width="3"/>
+        <circle cx="50" cy="50" r="40" stroke-width="1"/>
+        <circle cx="50" cy="50" r="16" stroke-width="2"/>
+        <ellipse cx="50" cy="50" rx="7" ry="16" stroke-width="1.5"/>
+        <path d="M34 50h32M37 43h26M37 57h26" stroke-width="1.5"/>
+      </g>
+      <g fill="currentColor" font-family="Georgia, serif" font-weight="700" text-anchor="middle" filter="url(#ink)">
+        <text font-size="8.5" letter-spacing="2.2"><textPath href="#arc-top" startOffset="50%">WORLDPRINT</textPath></text>
+        <text font-size="6.8" letter-spacing="1.6"><textPath href="#arc-bottom" startOffset="50%">TRAVEL PASSPORT</textPath></text>
+      </g>
+    </svg>
+    <div>
+      <h1>Worldprint<br>Privacy Policy</h1>
+    </div>
+  </header>
+
+  <nav class="lang" aria-label="Language">
+    <a href="#en">English</a>
+    <a href="#zh">繁體中文</a>
+  </nav>
+
+  <!-- ============================== English ============================== -->
+  <main id="en" class="doc" lang="en">
+    <p class="updated">Last updated: October 24, 2026</p>
+
+    <section class="glance" aria-labelledby="en-short">
+      <h2 id="en-short">The short version</h2>
+      <ul>
+        <li>You don’t need an account, and Worldprint never asks for your name or email.</li>
+        <li>Your stamps, trips, notes, chapters and profile photo stay on your device. We run no servers for the app.</li>
+        <li>Photo access is optional and is used only on your device, to suggest trips.</li>
+        <li>The free version shows ads from Google AdMob, which may collect device and usage data to serve them. Worldprint Pro removes ads.</li>
+      </ul>
+    </section>
+
+    <h2>Who this policy covers</h2>
+    <p>This policy describes how the Worldprint iPhone app (“Worldprint” or “the app”) handles information. “We” means the developer of Worldprint. Questions go to <a href="mailto:charliefanfan84@gmail.com">charliefanfan84@gmail.com</a>.</p>
+
+    <h2>What stays on your device</h2>
+    <p>Everything you create in the app is stored locally on your iPhone: countries you mark as visited or want to visit, how deeply you experienced a place, trips with their dates and notes, life chapters, U.S. states, areas you paint on the Explorer map, your display name, your profile photo and your app settings. We do not receive a copy.</p>
+    <p>If you use iCloud Backup or another device backup, your Apple settings decide whether this data is included in those backups.</p>
+
+    <h2>Photos</h2>
+    <p><strong>Import from Photos (optional).</strong> If you choose this feature, Worldprint asks for access to your photo library. It reads the date and location stored in each photo, compares the coordinates with map outlines built into the app, and groups photos into suggested trips. It also shows small previews of some photos so you can recognize each trip. All of this happens on your device. Your photos and their metadata are never uploaded, and we never see them. You can choose limited access, and you can change or revoke access at any time in Settings under Privacy &amp; Security, then Photos.</p>
+    <p><strong>Profile photo (optional).</strong> If you add a profile photo, you pick it with the system photo picker, which gives the app only the photo you select. The app crops it and keeps a small copy on your device. You can remove it from the Profile tab at any time, and deleting the app removes it too.</p>
+
+    <h2>Location</h2>
+    <p>Worldprint does not use location services and never asks for your current location. The only location data it handles is the location stored in your own photos, and only if you use Import from Photos as described above.</p>
+
+    <h2>Ads in the free version</h2>
+    <p>The free version shows banner ads provided by Google AdMob (Google LLC). To serve and measure ads, prevent fraud and keep the service working, Google may collect information such as your IP address (which can indicate your approximate location), device and operating system details, app-bounded device identifiers, how you interact with ads, and basic performance and crash information.</p>
+    <p>Worldprint does not currently show Apple’s App Tracking Transparency prompt, so your device’s advertising identifier is not available to ads through the app. How Google uses information from apps that use its services is described at <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">policies.google.com/technologies/partner-sites</a>. Ad data is handled by Google. We don’t receive it, and the app never sends Google anything you create in it.</p>
+    <p>If you are in the European Economic Area, the United Kingdom or Switzerland, Google’s consent message appears the first time ads load. You can review your choice later under Profile, in the ad privacy choices row, which appears wherever the law requires it. Worldprint Pro removes ads, and once you buy or restore Pro the app stops loading them.</p>
+
+    <h2>Purchases</h2>
+    <p>Worldprint Pro is a one-time purchase handled entirely by Apple’s App Store. We don’t receive your payment details, Apple ID or name. The app only asks Apple, on your device, whether Pro is active so it can unlock the features.</p>
+
+    <h2>Other services</h2>
+    <p>Worldprint has no account system, no analytics SDK, no crash-reporting service and no social login. The services involved are Apple (App Store, purchases, the system photo picker and the share sheet) and Google (AdMob, free version only).</p>
+    <p>When you share an image or PDF, it is created on your device and goes only where you send it using the iOS share sheet. Those apps and services have their own privacy policies.</p>
+
+    <h2>Children</h2>
+    <p>Worldprint is not directed to children under 13, and we do not knowingly collect personal information from children.</p>
+
+    <h2>Keeping and deleting your data</h2>
+    <p>Because your data lives on your device, you control it. Remove individual items inside the app, remove your profile photo from the Profile tab, or delete the app to erase everything it stored on the device. We keep no copy, so there is nothing for us to delete.</p>
+    <p>If you email us, we keep your message only as long as needed to reply and handle your request, and we delete it if you ask.</p>
+
+    <h2>Your choices and rights</h2>
+    <p>On iPhone you can limit ad personalization in Settings under Privacy &amp; Security, and you can manage Google’s ad settings at <a href="https://myadcenter.google.com" rel="noopener">myadcenter.google.com</a>.</p>
+    <p>Depending on where you live (for example the EEA, the UK or California), you may have rights to access, correct or delete personal information, or to object to certain processing. Because we don’t hold personal information about you, we usually have nothing to provide, but you can email us and we will respond to any request. For data Google processes for ads, you can also use Google’s own controls.</p>
+
+    <h2>Security</h2>
+    <p>App data is kept in the app’s private storage on your device and is protected by iOS. No method of storage is completely secure, but because nothing is sent to our servers, the main risks are the ones that apply to your device in general.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>We may update this policy. The date at the top shows the latest version. If a change is significant, we will mention it in the app’s release notes.</p>
+
+    <h2 id="contact">Contact</h2>
+    <p>Questions or requests: <a href="mailto:charliefanfan84@gmail.com">charliefanfan84@gmail.com</a></p>
+  </main>
+
+  <!-- ============================== 繁體中文 ============================== -->
+  <main id="zh" class="doc" lang="zh-Hant">
+    <p class="updated">最後更新：2026 年 10 月 24 日</p>
+
+    <section class="glance" aria-labelledby="zh-short">
+      <h2 id="zh-short">簡短說明</h2>
+      <ul>
+        <li>不需要註冊帳號，Worldprint 也不會要求你提供姓名或電子郵件。</li>
+        <li>你的郵票、行程、備註、章節和個人頭像都只存在你的裝置上。本 App 沒有使用我們自己的伺服器。</li>
+        <li>相簿權限是選用的，只在你的裝置上使用，用來建議旅行紀錄。</li>
+        <li>免費版會顯示 Google AdMob 的廣告，Google 可能為此蒐集裝置與使用資料。購買 Worldprint Pro 即可移除廣告。</li>
+      </ul>
+    </section>
+
+    <h2>適用範圍</h2>
+    <p>本政策說明 Worldprint iPhone App（以下簡稱「本 App」）如何處理資訊。「我們」指 Worldprint 的開發者。如有任何問題，請來信 <a href="mailto:charliefanfan84@gmail.com">charliefanfan84@gmail.com</a>。</p>
+
+    <h2>留在你裝置上的資料</h2>
+    <p>你在 App 裡建立的所有內容都只儲存在你的 iPhone 上，包括：標記為去過或想去的國家、你在當地體驗的深度、附有日期和備註的行程、人生章節、美國各州、你在 Explorer 地圖上填色的區域、顯示名稱、個人頭像和 App 設定。我們不會收到任何副本。</p>
+    <p>如果你使用 iCloud 備份或其他裝置備份，這些資料是否包含在備份中，取決於你的 Apple 設定。</p>
+
+    <h2>照片</h2>
+    <p><strong>從相簿匯入（選用）。</strong>如果你選擇使用這項功能，Worldprint 會要求存取你的相簿。App 會讀取每張照片內記錄的日期和位置，將座標與 App 內建的地圖輪廓比對，再把照片整理成建議的旅行。為了讓你辨認每一段旅行，也會顯示部分照片的小縮圖。這些處理全部在你的裝置上完成，你的照片和照片資訊不會被上傳，我們也看不到。你可以選擇「有限度存取」，並隨時在「設定」的「隱私權與安全性」下的「照片」中更改或關閉權限。</p>
+    <p><strong>個人頭像（選用）。</strong>如果你設定個人頭像，是透過系統的照片選擇器挑選，App 只會取得你選的那一張。App 會裁切並在你的裝置上保留一份小尺寸副本。你可以隨時在「Profile」分頁移除，刪除 App 也會一併移除。</p>
+
+    <h2>位置</h2>
+    <p>Worldprint 不使用定位服務，也不會要求取得你目前的位置。App 唯一會處理的位置資料，是你自己照片裡記錄的位置，而且只有在你使用上述「從相簿匯入」時才會用到。</p>
+
+    <h2>免費版的廣告</h2>
+    <p>免費版會顯示由 Google AdMob（Google LLC）提供的橫幅廣告。為了投放與衡量廣告、防止詐騙並維持服務運作，Google 可能會蒐集下列資訊：你的 IP 位址（可推測大概位置）、裝置與作業系統資訊、僅限於該 App 的裝置識別碼、你與廣告的互動情形，以及基本的效能與當機資訊。</p>
+    <p>Worldprint 目前不會顯示 Apple 的「App 追蹤透明度」提示，因此廣告無法透過本 App 取得你裝置的廣告識別碼。Google 如何使用使用其服務之 App 的資訊，請參閱 <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">policies.google.com/technologies/partner-sites</a>。廣告資料由 Google 處理，我們不會收到，本 App 也不會把你建立的任何內容傳給 Google。</p>
+    <p>如果你位於歐洲經濟區、英國或瑞士，第一次載入廣告時會出現 Google 的同意視窗。之後你可以在「Profile」的「Ad privacy choices」重新檢視你的選擇，只有在法律要求的地區才會顯示這一列。Worldprint Pro 可以移除廣告，購買或還原 Pro 之後，App 就不會再載入廣告。</p>
+
+    <h2>購買</h2>
+    <p>Worldprint Pro 是一次性買斷的項目，完全由 Apple 的 App Store 處理。我們不會收到你的付款資料、Apple ID 或姓名。App 只會在你的裝置上向 Apple 確認 Pro 是否已啟用，以便解鎖功能。</p>
+
+    <h2>其他服務</h2>
+    <p>Worldprint 沒有帳號系統、沒有分析工具 SDK、沒有當機回報服務，也沒有社群帳號登入。牽涉到的服務是 Apple（App Store、購買、系統照片選擇器和分享選單）以及 Google（AdMob，僅限免費版）。</p>
+    <p>當你分享圖片或 PDF 時，檔案是在你的裝置上產生，只會透過 iOS 分享選單傳到你選擇的地方。那些 App 與服務有各自的隱私權政策。</p>
+
+    <h2>兒童</h2>
+    <p>Worldprint 不是針對 13 歲以下兒童設計的，我們也不會蓄意蒐集兒童的個人資料。</p>
+
+    <h2>資料的保存與刪除</h2>
+    <p>你的資料存在你的裝置上，所以由你自己掌控。你可以在 App 內刪除個別項目、在「Profile」分頁移除個人頭像，或直接刪除 App，就能清除它在裝置上儲存的所有內容。我們沒有保留任何副本，所以沒有需要我們刪除的資料。</p>
+    <p>如果你寄電子郵件給我們，我們只會在回覆與處理你的請求所需的期間保留郵件，你要求時我們會刪除。</p>
+
+    <h2>你的選擇與權利</h2>
+    <p>在 iPhone 上，你可以到「設定」的「隱私權與安全性」限制廣告個人化，也可以到 <a href="https://myadcenter.google.com" rel="noopener">myadcenter.google.com</a> 管理 Google 的廣告設定。</p>
+    <p>依你居住的地區（例如歐洲經濟區、英國或加州），你可能享有查閱、更正、刪除個人資料，或反對特定處理方式的權利。由於我們並不持有你的個人資料，通常沒有可以提供的內容，但你仍可以來信，我們會回覆任何請求。至於 Google 為廣告處理的資料，你也可以使用 Google 自己的控制選項。</p>
+
+    <h2>安全性</h2>
+    <p>App 資料儲存在你裝置上該 App 的私有空間，並受 iOS 保護。沒有任何儲存方式是完全安全的，但因為沒有任何資料傳到我們的伺服器，主要風險就是一般裝置本身會面對的風險。</p>
+
+    <h2>本政策的變更</h2>
+    <p>我們可能會更新本政策，頂端的日期標示最新版本。如果有重大變更，我們會在 App 的版本說明中提及。</p>
+
+    <h2>聯絡我們</h2>
+    <p>如有問題或請求，請來信：<a href="mailto:charliefanfan84@gmail.com">charliefanfan84@gmail.com</a></p>
+  </main>
+
+  <footer class="site">
+    <p>Worldprint is an iPhone app. This page is the app’s privacy policy.</p>
+  </footer>
+</div>
+</body>
+</html>
